@@ -1,5 +1,4 @@
 echo "Installing pymoon"
-echo "\n"
 
 
 
@@ -13,14 +12,16 @@ else
 fi
 
 
-pythonExist =  $(python3 --version)
+# install python3
+echo "Installing Dependency"
 
+sudo apt-get install python3
 
-# installing python if not installed
-{
-    
+# Give permision file
+chmod +x pymoon.py
 
-} || {
-    pip install python3
+# copy pymon to /bin/ for direct access
+sudo cp pymoon.py /opt/
 
-}
+# link script
+sudo ln /opt/pymoon.py /usr/bin/pymoon

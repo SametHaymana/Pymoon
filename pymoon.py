@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 
 import sys
 import hashlib
@@ -12,7 +12,7 @@ def hash_file(filename):
    of the file passed into it"""
 
    # make a hash object
-   h = hashlib.sha1()
+   h = hashlib.sha256()
 
    # open file for reading in binary mode
    with open(filename,'rb') as file:
@@ -31,7 +31,7 @@ def hash_file(filename):
 
 
 
-if len(sys.argv) > 2:
+if len(sys.argv) < 2:
 	print("You need to spesify py file")
 else:
 	# Check file is python file
