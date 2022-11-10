@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pymoon - Detect changes 
 
 ## Usage
@@ -23,3 +24,9 @@ Please make sure to update tests as appropriate.
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+=======
+# Pymoon - detect changes 
+
+
+
+>>>>>>> 5df7cc915b375215136eadcac7608562bb6d5a8a
